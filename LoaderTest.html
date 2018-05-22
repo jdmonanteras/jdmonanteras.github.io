@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<script
+	var scene;
+	scene = new THREE.Scene();
+	
+	var loader = new THREE.JSONLoader();
+	loader.load('HorizonLogo3D.json', handle_load);
+	
+	function handle_load(geometry, materials){
+		var mesh = new THREE.Mesh(geometry, materials);
+		scene.add(mesh);
+	}
+	
+></script>
+
+<body style="margin : 0px; overflow: hidden;">
+
+		
+		 <p> Hello World</p>
+		
+		
+	
+</body>
+
+</html>
+
+
+
